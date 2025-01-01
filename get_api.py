@@ -2,7 +2,7 @@ import requests
 
 class WeatherAPI:
     def __init__(self, access_key):
-        self.url = "http://api.weatherapi.com/v1/current.json" # weather.com adligimiz API
+        self.url = "http://api.weatherapi.com/v1/current.json" 
         self.access_key = access_key
 
     def get_weather(self,city):
@@ -58,6 +58,6 @@ class Weather_add:
             print(f"hava ile bagli werh:{contion_text_add}")
 
 if __name__ == "__main__":
-    accesskey = "fec541a967a5476f836184125250101"
+    accesskey = "fec541a967a5476f836184125250101" # weather.com adligimiz API
     Weather_add = Weather_add(accesskey)
     Weather_add.to_start()
